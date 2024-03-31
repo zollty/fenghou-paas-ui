@@ -1,21 +1,20 @@
-import { ColumnProps, ParamTableProps } from '../interface'
-import { useTable } from './useTable'
-import { provide, reactive, ref, watch, getCurrentInstance, computed } from 'vue'
-import { Table, TableRowSelection } from '@arco-design/web-vue'
-import { useSelection } from './useSelection'
-import { cloneDeep } from 'lodash'
+import { ColumnProps, ParamTableProps } from "../interface"
+import { useTable } from "./useTable"
+import { provide, reactive, ref, watch, getCurrentInstance, computed } from "vue"
+import { Table, TableRowSelection } from "@arco-design/web-vue"
+import { useSelection } from "./useSelection"
+import { cloneDeep } from "lodash"
 export default function (props: ParamTableProps) {
   const Instance = getCurrentInstance()
   const rowSelection = computed<TableRowSelection>(
-    () => Instance.attrs['row-selection'] || Instance.attrs['rowSelection'] || undefined
+    () => Instance.attrs["row-selection"] || Instance.attrs["rowSelection"] || undefined
   )
   const rowKey = computed<string | undefined>(
-    () => (Instance.attrs['rowKey'] as string) || (Instance.attrs['row-key'] as string) || undefined
+    () => (Instance.attrs["rowKey"] as string) || (Instance.attrs["row-key"] as string) || undefined
   )
   /**表格组件Ref */
   const tableRef = ref<InstanceType<typeof Table>>()
   const stripe = ref(true)
-
   /**表格操作Hooks */
   const {
     tableData,
@@ -44,10 +43,10 @@ export default function (props: ParamTableProps) {
   const tableColumns = ref<ColumnProps[]>(props.columns)
 
   const enumMap = ref(new Map<string, { [key: string]: any }[]>())
-  provide('enumMap', enumMap)
+  provide("enumMap", enumMap)
   const setEnumMap = async (col: ColumnProps) => {
     if (!col.enum) return
-    if (typeof col.enum !== 'function') return enumMap.value.set(col.dataIndex, col.enum)
+    if (typeof col.enum !== "function") return enumMap.value.set(col.dataIndex, col.enum)
     const { data } = await col.enum()
     enumMap.value.set(col.dataIndex, data)
   }
@@ -105,7 +104,7 @@ export default function (props: ParamTableProps) {
    * @return string
    * */
   function handleDataIndex(dataIndex: string) {
-    const dataIndexArr = dataIndex.split('.')
+    const dataIndexArr = dataIndex.split(".")
     if (dataIndexArr.length == 1) return dataIndex
     return dataIndexArr[dataIndexArr.length - 1]
   }
@@ -119,26 +118,26 @@ export default function (props: ParamTableProps) {
 
   /**设置密度 */
   const densityState: {
-    size: 'mini' | 'medium' | 'large' | 'small'
+    size: "mini" | "medium" | "large" | "small"
     options: any
   } = reactive({
-    size: 'medium',
+    size: "medium",
     options: [
       {
-        name: '迷你',
-        value: 'mini'
+        name: "迷你",
+        value: "mini"
       },
       {
-        name: '偏小',
-        value: 'small'
+        name: "偏小",
+        value: "small"
       },
       {
-        name: '中等',
-        value: 'medium'
+        name: "中等",
+        value: "medium"
       },
       {
-        name: '偏大',
-        value: 'large'
+        name: "偏大",
+        value: "large"
       }
     ]
   })

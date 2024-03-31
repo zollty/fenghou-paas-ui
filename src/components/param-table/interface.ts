@@ -1,6 +1,6 @@
-import { TableColumnData, TableProps } from '@arco-design/web-vue/es/table/interface'
-import { BreakPoint, Responsive } from '../Grid/interface'
-export interface ParamTableProps extends Partial<Omit<TableProps, 'data'>> {
+import { TableColumnData, TableProps } from "@arco-design/web-vue/es/table/interface"
+import { BreakPoint, Responsive } from "../Grid/interface"
+export interface ParamTableProps extends Partial<Omit<TableProps, "data">> {
   /**列配置项==> 必传 **/
   columns: ColumnProps[]
   /**请求表格数据的api ==> 必传 */
@@ -37,28 +37,28 @@ export interface EnumProps {
   children?: EnumProps[]
   [key: string]: any
 }
-export type TypeProp = 'index' | 'selection' | 'expand'
+export type TypeProp = "index" | "selection" | "expand"
 export type SearchType =
   /**输入框 */
-  | 'a-input'
+  | "a-input"
   /**数字输入框 */
-  | 'a-input-number'
-  | 'a-select'
-  | 'a-select-v2'
-  | 'a-tree-select'
+  | "a-input-number"
+  | "a-select"
+  | "a-select-v2"
+  | "a-tree-select"
   /**级连选择器 */
-  | 'a-cascader'
+  | "a-cascader"
   /**日期选择器 */
-  | 'a-date-picker'
+  | "a-date-picker"
   /**月份选择器 */
-  | 'a-month-picker'
+  | "a-month-picker"
   /**年份选择器 */
-  | 'a-year-picker'
+  | "a-year-picker"
   /**范围选择器 */
-  | 'a-range-picker'
-  | 'a-time-select'
-  | 'a-switch'
-  | 'a-slider'
+  | "a-range-picker"
+  | "a-time-select"
+  | "a-switch"
+  | "a-slider"
 export type SearchProps = {
   /**当前项搜索框的类型 */
   el: SearchType

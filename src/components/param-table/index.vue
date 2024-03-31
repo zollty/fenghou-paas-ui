@@ -9,10 +9,17 @@
       :columns="searchColumns"
       :search-col="searchCol"
     />
-    <a-divider v-if="isShowSearch" style="margin-top: 0" />
+    <a-divider
+      v-if="isShowSearch"
+      style="margin-top: 0"
+    />
     <div class="table">
       <!-- 表格头部 操作按钮 -->
-      <a-row style="margin-bottom: 16px" align="center" v-if="showTableTop">
+      <a-row
+        v-if="showTableTop"
+        style="margin-bottom: 16px"
+        align="center"
+      >
         <a-col :span="12">
           <a-space>
             <slot
@@ -28,18 +35,26 @@
           style="display: flex; align-items: center; justify-content: end"
         >
           <a-tooltip content="斑马纹">
-            <a-switch v-model="stripe" size="small" />
+            <a-switch
+              v-model="stripe"
+              size="small"
+            />
           </a-tooltip>
           <a-divider direction="vertical" />
           <a-space>
             <a-tooltip content="刷新">
-              <div class="action-icon" @click="getTableList">
+              <div
+                class="action-icon"
+                @click="getTableList"
+              >
                 <icon-refresh size="18" />
               </div>
             </a-tooltip>
             <a-dropdown @select="changeDensitySize">
               <a-tooltip content="密度">
-                <div class="action-icon"><icon-line-height size="18" /></div>
+                <div class="action-icon">
+                  <icon-line-height size="18" />
+                </div>
               </a-tooltip>
               <template #content>
                 <a-doption
@@ -53,8 +68,13 @@
               </template>
             </a-dropdown>
             <a-tooltip content="列设置">
-              <a-popover trigger="click" position="bl">
-                <div class="action-icon"><icon-settings size="18" /></div>
+              <a-popover
+                trigger="click"
+                position="bl"
+              >
+                <div class="action-icon">
+                  <icon-settings size="18" />
+                </div>
                 <template #content>
                   <div id="tableSetting">
                     <div
@@ -99,7 +119,10 @@
           #[item]="data"
           :key="item"
         >
-          <slot :name="item" v-bind="data"></slot>
+          <slot
+            :name="item"
+            v-bind="data"
+          ></slot>
         </template>
       </a-table>
       <a-pagination
@@ -167,7 +190,7 @@ const props = withDefaults(defineProps<ParamTableProps>(), {
   selectId: "id",
   searchCol: () => ({ xs: 1, sm: 2, md: 2, lg: 3, xl: 4 }),
   isShowSearch: true,
-  maxColWidth:'200px'
+  maxColWidth:"200px"
 })
 
 const {
