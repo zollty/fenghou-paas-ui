@@ -19,6 +19,7 @@ const FORM: AppRouteRecordRaw = {
       meta: {
         menuName: "首页看板",
         requiresAuth: true,
+        theme: "light",
         icon:"icon-dashboard",
         roles: ["*"],
         order: 1
@@ -30,6 +31,7 @@ const FORM: AppRouteRecordRaw = {
       component: () => import("/packages/llm/views/intro/intro.vue"),
       meta: {
         menuName: "基础介绍",
+        theme: "light",
         icon: "icon-file",
         requiresAuth: true,
         roles: ["*"],

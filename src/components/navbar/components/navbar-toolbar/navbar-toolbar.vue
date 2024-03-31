@@ -231,7 +231,7 @@ import UserPanel from "../user-panel/user-panel.vue"
 import { doLogout } from "sso-login-logic"
 import { getCurrentSystemList } from "@/router/system"
 import { useRefState } from "@/hooks/state"
-import { useRouter } from "vue-router"
+import { useRouter, useRoute } from "vue-router"
 import { LinkList } from "./linkConfig"
 import { getAppHref } from "@/utils/url"
 import { openWindow } from "@/utils"
@@ -245,6 +245,7 @@ const avatar = computed(() => {
   return userStore.userInfo.avatarUrl
 })
 const router = useRouter()
+const route = useRoute()
 const systemList = getCurrentSystemList()
 const [select, , setSelectWatch] = useRefState("")
 setSelectWatch((val) => {
@@ -260,18 +261,35 @@ const username = computed(() => {
 const theme = computed(() => {
   return appStore.theme
 })
-const isDark = useDark({
-  selector: "body",
-  attribute: "arco-theme",
-  initialValue: appStore.theme as BasicColorSchema,
-  valueDark: "dark",
-  valueLight: "light",
-  storageKey: "arco-theme",
-  onChanged(isDark: boolean) {
-    // overridden default behavior
-    appStore.toggleTheme(isDark)
-  }
-})
+let isDark
+if(route.meta.theme) { // 固定主题样式
+  isDark = useDark({
+    selector: "body",
+    attribute: "arco-theme",
+    initialValue: route.meta.theme as BasicColorSchema,
+    valueDark: "dark",
+    valueLight: "light",
+    storageKey: "arco-theme",
+    onChanged(isDark: boolean) {
+      // overridden default behavior
+      isDark = route.meta.theme === "dark"
+      appStore.toggleTheme(isDark)
+    }
+  })
+} else {
+  isDark = useDark({
+    selector: "body",
+    attribute: "arco-theme",
+    initialValue: appStore.theme as BasicColorSchema,
+    valueDark: "dark",
+    valueLight: "light",
+    storageKey: "arco-theme",
+    onChanged(isDark: boolean) {
+      // overridden default behavior
+      appStore.toggleTheme(isDark)
+    }
+  })
+}
 const toggleTheme = useToggle(isDark)
 const handleToggleTheme = () => {
   toggleTheme()

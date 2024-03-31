@@ -13,6 +13,7 @@ declare module "vue-router" {
     noAffix?: boolean // 如果设置为true，标记将不会粘贴在标签栏中
     ignoreCache?: boolean //如果设置为true，页面将不会被缓存
     tabBar?: boolean
+    theme?: string
     componentName?: string //组件名称，用来缓存页面使用，自己填写优先使用的，不填写使用RouteName
   }
 }
