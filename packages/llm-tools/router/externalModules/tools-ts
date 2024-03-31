@@ -1,0 +1,68 @@
+import { DEFAULT_LAYOUT } from "@/router/routes/base"
+import { AppRouteRecordRaw } from "@/router/routes/types"
+
+const FORM: AppRouteRecordRaw = {
+  path: "/tool",
+  name: "tool",
+  component: DEFAULT_LAYOUT,
+  meta: {
+    menuName: "通用工具",
+    icon: "param-icon-bns_3d-section-cube2",
+    requiresAuth: true,
+    order: 12
+  },
+  children: [
+    {
+      path: "http://172.16.8.91:9559/#/llm/fileparse",
+      name: "fileparse",
+      component: () => "",
+      meta: {
+        menuName: "文件解析工具",
+        icon: "icon-user-group",
+        requiresAuth: true,
+        ignoreCache: true,
+        order: 2,
+        roles: ["http://172.16.8.91:8501/?request=GET%3A%2Fftest", "", "*"]
+      }
+    },
+    {
+      path: "http://172.16.8.91:9559/#/llm/battle",
+      name: "battle",
+      component: () => "",
+      meta: {
+        menuName: "模型对比",
+        icon: "icon-user-group",
+        requiresAuth: true,
+        ignoreCache: true,
+        order: 28,
+        roles: ["http://172.16.8.91:7785", "", "*"]
+      }
+    },{
+      path: "http://172.16.8.91:9559/#/llm/apidocs",
+      name: "apidocs",
+      component: () => "",
+      meta: {
+        menuName: "API在线文档",
+        icon: "icon-user-group",
+        requiresAuth: true,
+        ignoreCache: true,
+        order: 40,
+        roles: ["http://172.16.8.91:7861", "", "*"]
+      }
+    },{
+      path: "http://172.16.8.91:9559/#/llm/jsontools",
+      name: "jsontools",
+      component: () => "",
+      meta: {
+        menuName: "JSON查看工具",
+        icon: "icon-user-group",
+        requiresAuth: true,
+        ignoreCache: true,
+        order: 44,
+        roles: ["http://zollty.com/tools/json.html", "", "*"]
+      }
+    }
+  ]
+}
+
+export default FORM

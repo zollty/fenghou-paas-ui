@@ -1,0 +1,153 @@
+import { DEFAULT_LAYOUT } from "@/router/routes/base"
+import { AppRouteRecordRaw } from "@/router/routes/types"
+
+//roles: ["http://192.168.32.151:7760", "", "*"]
+//roles: ["http://zollty.com/tools/json.html", "", "*"]
+const FORM: AppRouteRecordRaw[] = [
+  {
+    path: "/",
+    name: "7ds7676ds",
+    component: DEFAULT_LAYOUT,
+    meta: {
+      menuName: "日志管理",
+      icon: "icon-storage",
+      requiresAuth: true,
+      order: 0
+    },
+    children: [
+      {
+        path: "/intro",
+        name: "intro",
+        component: () => import("../../views/intro/intro.vue"),
+        meta: {
+          menuName: "基础介绍",
+          icon: "icon-apps",
+          requiresAuth: true,
+          hideInMenu: true,
+          order: 1
+        }
+      },{
+        path: "/functioncall",
+        name: "functioncall",
+        component: () => import("@/views/iframe.vue"),
+        meta: {
+          menuName: "工具调用示例",
+          icon: "icon-user-group",
+          requiresAuth: true,
+          hideInMenu: true,
+          order: 3,
+          roles: ["http://192.168.32.151:7770/tool", "", "*"]
+        }
+      },{
+        path: "/codegen",
+        name: "codegen",
+        component: () => import("@/views/iframe.vue"),
+        meta: {
+          menuName: "代码生成示例",
+          icon: "icon-user-group",
+          requiresAuth: true,
+          hideInMenu: true,
+          order: 3,
+          roles: ["http://192.168.32.151:7770/code", "", "*"]
+        }
+      },{
+        path: "/ybychat",
+        name: "ybychat",
+        component: () => import("@/views/iframe.vue"),
+        meta: {
+          menuName: "园博园助理",
+          icon: "icon-user-group",
+          requiresAuth: true,
+          hideInMenu: true,
+          order: 4,
+          roles: ["http://192.168.32.151:8501/?request=GET%3A%2Fyby", "", "*"]
+        }
+      },{
+        path: "/fuxichat",
+        name: "fuxichat",
+        component: () => import("@/views/iframe.vue"),
+        meta: {
+          menuName: "风后AI®后台",
+          icon: "icon-user-group",
+          requiresAuth: true,
+          hideInMenu: true,
+          order: 5,
+          roles: ["http://192.168.32.151:8501", "", "*"]
+        }
+      },{
+        path: "/battle",
+        name: "battle",
+        component: () => import("@/views/iframe.vue"),
+        meta: {
+          menuName: "模型对比",
+          icon: "icon-user-group",
+          requiresAuth: true,
+          hideInMenu: true,
+          order: 6,
+          roles: ["http://192.168.32.151:7785", "", "*"]
+        }
+      },{
+        path: "/defaultchat",
+        name: "defaultchat",
+        component: () => import("@/views/iframe.vue"),
+        meta: {
+          menuName: "前台Chat",
+          icon: "icon-user-group",
+          requiresAuth: true,
+          hideInMenu: true,
+          order: 7,
+          roles: ["http://192.168.32.151:7775", "", "*"]
+        }
+      },{
+        path: "/apidocs",
+        name: "apidocs",
+        component: () => import("@/views/iframe.vue"),
+        meta: {
+          menuName: "API在线文档",
+          icon: "icon-user-group",
+          requiresAuth: true,
+          hideInMenu: true,
+          order: 8,
+          roles: ["http://192.168.32.151:7861", "", "*"]
+        }
+      },{
+        path: "/jsontools",
+        name: "jsontools",
+        component: () => import("@/views/iframe.vue"),
+        meta: {
+          menuName: "JSON查看工具",
+          icon: "icon-user-group",
+          requiresAuth: true,
+          hideInMenu: true,
+          order: 10,
+          roles: ["http://zollty.com/tools/json.html", "", "*"]
+        }
+      },{
+        path: "/llmtrain",
+        name: "llmtrain",
+        component: () => import("@/views/iframe.vue"),
+        meta: {
+          menuName: "LLM-训练",
+          icon: "icon-user-group",
+          requiresAuth: true,
+          hideInMenu: true,
+          order: 13,
+          roles: ["http://192.168.32.151:7760", "", "*"]
+        }
+      },{
+        path: "/chatglm3",
+        name: "chatglm3",
+        component: () => import("@/views/iframe.vue"),
+        meta: {
+          menuName: "原始ChatGLM3",
+          icon: "icon-user-group",
+          requiresAuth: true,
+          hideInMenu: true,
+          order: 15,
+          roles: ["http://192.168.32.151:7770/chat", "", "*"]
+        }
+      }
+    ]}
+]
+
+export default FORM

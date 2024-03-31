@@ -1,0 +1,126 @@
+const FORM = [
+  {
+    path: "http://172.16.8.14:9527/#/llm/fuxichat",
+    name: "fuxichat",
+    meta: {
+      menuName: "风后AI®后台",
+      icon: "icon-user-group",
+      requiresAuth: true,
+      ignoreCache: true,
+      order: 2,
+      roles: ["http://192.168.32.151:8501", "", "*"]
+    }
+  },{
+    path: "http://172.16.8.14:9527/#/llm/functioncall",
+    name: "functioncall",
+    meta: {
+      menuName: "工具调用示例",
+      icon: "icon-user-group",
+      requiresAuth: true,
+      ignoreCache: true,
+      order: 3,
+      roles: ["http://192.168.32.151:7770/tool", "", "*"]
+    }
+  },{
+    path: "http://172.16.8.14:9527/#/llm/codegen",
+    name: "codegen",
+    meta: {
+      menuName: "代码生成示例",
+      icon: "icon-user-group",
+      requiresAuth: true,
+      ignoreCache: true,
+      order: 4,
+      roles: ["http://192.168.32.151:7770/code", "", "*"]
+    }
+  },{
+    path: "http://172.16.8.14:9527/#/llm/ybychat",
+    name: "ybychat",
+    meta: {
+      menuName: "园博园助理",
+      icon: "icon-user-group",
+      requiresAuth: true,
+      ignoreCache: true,
+      order: 5,
+      roles: ["http://192.168.32.151:8501/?request=GET%3A%2Fyby", "", "*"]
+    }
+  },{
+    path: "http://172.16.8.14:9527/#/llm/battle",
+    name: "battle",
+    meta: {
+      menuName: "模型对比",
+      icon: "icon-user-group",
+      requiresAuth: true,
+      ignoreCache: true,
+      order: 6,
+      roles: ["http://192.168.32.151:7785", "", "*"]
+    }
+  },{
+    path: "http://172.16.8.14:9527/#/llm/defaultchat",
+    name: "defaultchat",
+    meta: {
+      menuName: "前台Chat",
+      icon: "icon-user-group",
+      requiresAuth: true,
+      ignoreCache: true,
+      order: 7,
+      roles: ["http://192.168.32.151:7775", "", "*"]
+    }
+  },{
+    path: "http://172.16.8.14:8501/",
+    name: "kbmanage",
+    meta: {
+      menuName: "知识库管理",
+      icon: "icon-user-group",
+      requiresAuth: true,
+      ignoreCache: true,
+      order: 8,
+      roles: ["http://192.168.32.151:7760", "", "*"]
+    }
+  },{
+    path: "http://172.16.8.14:9527/#/llm/apidocs",
+    name: "apidocs",
+    meta: {
+      menuName: "API在线文档",
+      icon: "icon-user-group",
+      requiresAuth: true,
+      ignoreCache: true,
+      order: 9,
+      roles: ["http://192.168.32.151:7861", "", "*"]
+    }
+  },{
+    path: "http://172.16.8.14:9527/#/llm/jsontools",
+    name: "jsontools",
+    meta: {
+      menuName: "JSON查看工具",
+      icon: "icon-user-group",
+      requiresAuth: true,
+      ignoreCache: true,
+      order: 10,
+      roles: ["http://zollty.com/tools/json.html", "", "*"]
+    }
+  },{
+    path: "http://172.16.8.14:9527/#/llm/llmtrain",
+    name: "llmtrain",
+    meta: {
+      menuName: "LLM-训练",
+      icon: "icon-user-group",
+      requiresAuth: true,
+      ignoreCache: true,
+      order: 13,
+      roles: ["http://192.168.32.151:7760", "", "*"]
+    }
+  },{
+    path: "http://172.16.8.14:9527/#/llm/chatglm3",
+    name: "chatglm3",
+    meta: {
+      menuName: "原始ChatGLM3",
+      icon: "icon-user-group",
+      requiresAuth: true,
+      ignoreCache: true,
+      order: 15,
+      roles: ["http://192.168.32.151:7770/chat", "", "*"]
+    }
+  }
+]
+
+export default FORM

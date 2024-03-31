@@ -1,0 +1,19 @@
+module.exports = {
+  root: true,
+  plugins: ["stylelint-order", "stylelint-less"],
+  extends: [
+    "stylelint-config-standard",
+    "stylelint-config-prettier",
+    "stylelint-config-recess-order"
+  ],
+  rules: {
+    // 推荐规则
+    "at-rule-no-unknown": null,
+    "less/at-rule-no-unknown": true,
+    "custom-property-pattern": null,
+    "selector-class-pattern": null,
+    "no-descending-specificity": null,
+    "selector-pseudo-class-no-unknown": null,
+    "font-family-no-missing-generic-family-keyword": null
+  }
+}

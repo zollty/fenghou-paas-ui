@@ -1,0 +1,32 @@
+VITE_NODE_ENV='production'
+
+
+# 基础接口地址
+VITE_API_BASE_URL= '//sit-app.paramst.cn/'
+
+# 系统列表，所有为 *
+VITE_SYSTEM_LIST='*'
+
+
+# 单点登录地址
+VITE_APP_LOGINBASE_URL='//sit-app.paramst.cn/'
+
+VITE_APP_SOURCE_MAP = false
+
+# 文件上传地址
+VITE_APP_UPLOAD_URL='https://pos.paramland.cn/file/upload'
+
+# 请求头的token名称
+VITE_SERVER_TOKEN_NAME=satoken
+
+# 请求头的x-app-code的值
+VITE_SERVER_XAppCode=BJXCZHGLPT
+
+# 线上组件库地址
+VITE_APP_COMPONENT_URL=http://sit-app.paramst.cn
+
+# 域名
+VITE_APP_URL_DOMAIN="http://sit-app.paramst.cn"
+
+#系统地址配置,JSON字符串
+VITE_SYSTEM_URL_JSON='{"sysmgmt":"http://sit-app.paramst.cn/app-sysmgmt/","resourceCenter":"http://sit-app.paramst.cn/app-resource-center/","serviceCenter":"http://sit-app.paramst.cn/app-service-center/","opsMonitor":"http://sit-app.paramst.cn/app-ops-monitor/","twin":"http://sit-app.paramst.cn/app-twin/","landscape-bigscreen":"http://sit-app.paramst.cn/app-landscape-bigscreen/","param-view":"http://sit-app.paramst.cn/app-param-view/"}'

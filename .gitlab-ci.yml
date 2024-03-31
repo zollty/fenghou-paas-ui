@@ -1,0 +1,92 @@
+# 共享缓存设置
+cache:
+  key: ${CI_COMMIT_REF_SLUG} # 使得每个“分支”使用不同的缓存
+#  untracked: true # 缓存被git忽略的文件，可以代替下面的paths
+  policy: pull-push # 默认 拉取缓存+上传缓存
+  paths:
+    - node_modules/
+
+variables:
+  DP: "sit" # 在Pipelines页面手动触发CI，Run Pipeline时输入变量 DP=sit/uat等即可触发
+
+stages:
+  - setup
+  - build-branch
+  - build-tag
+  - deploy
+
+setup:
+  stage: setup
+  only:
+    refs:
+      - branches
+      - tags
+    variables:
+      - $CI_COMMIT_MESSAGE =~ />(uat|sit|pre)/i
+      - $DP  =~ /(uat|sit|pre)/i
+  tags:
+    - office
+  script:
+    - chmod +x ctl.sh && ./ctl.sh setup
+
+build-branch:
+  stage: build-branch
+  only:
+    refs:
+      - branches
+    variables:
+      - $CI_COMMIT_MESSAGE =~ />(uat|sit|pre)/i
+      - $DP  =~ /(uat|sit|pre)/i
+  tags:
+    - office
+  script:
+    - chmod +x ctl.sh && ./ctl.sh build
+  cache: # 继承全局配置
+    key: ${CI_COMMIT_REF_SLUG} # 使得每个“分支”使用不同的缓存
+    # 覆盖 policy
+    policy: pull
+    paths:
+      - node_modules/
+  artifacts: # tag构建时，生成artifacts
+    name: "dist"
+    untracked: true
+    expire_in: 1 days
+    paths:
+      - dist/
+
+build-tag:
+  stage: build-tag
+  only:
+    refs:
+      - tags
+    variables:
+      - $CI_COMMIT_MESSAGE =~ />(uat|sit|pre)/i
+      - $DP  =~ /(uat|sit|pre)/i
+  tags:
+    - office
+  script:
+    - chmod +x ctl.sh && ./ctl.sh build
+  cache: # 继承全局配置
+    # 覆盖 policy
+    policy: pull
+  artifacts: # tag构建时，生成artifacts
+    name: "dist"
+    untracked: true
+    expire_in: 365 days
+    paths:
+      - dist/
+
+deloy-job:
+  stage: deploy
+  cache: {} # 禁用缓存，此处不需要
+  only:
+    refs:
+      - branches
+      - tags
+    variables:
+      - $CI_COMMIT_MESSAGE =~ />(uat|sit|pre)/i
+      - $DP  =~ /(uat|sit|pre)/i
+  tags:
+    - office
+  script:
+    - chmod +x ctl.sh && ./ctl.sh deploy

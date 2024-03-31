@@ -1,0 +1,172 @@
+const FORM = [
+  {
+    path: "http://172.16.8.91:9559/#/llm/fileparse",
+    name: "fileparse",
+    meta: {
+      menuName: "文件解析工具",
+      icon: "icon-user-group",
+      requiresAuth: true,
+      ignoreCache: true,
+      order: 2,
+      roles: ["http://172.16.8.91:8501/?request=GET%3A%2Fftest", "", "*"]
+    }
+  },
+  {
+    path: "http://172.16.8.91:9559/#/llm/modelmg",
+    name: "modelmg",
+    meta: {
+      menuName: "模型在线管理",
+      icon: "icon-user-group",
+      requiresAuth: true,
+      ignoreCache: true,
+      order: 3,
+      roles: ["http://172.16.8.91:8501/?request=GET%3A%2Fmodelmg", "", "*"]
+    }
+  },
+  {
+    path: "http://172.16.8.91:9559/#/llm/fenghou-chat",
+    name: "fenghou-chat",
+    meta: {
+      menuName: "风后AI®后台",
+      icon: "icon-user-group",
+      requiresAuth: true,
+      ignoreCache: true,
+      order: 4,
+      roles: ["http://172.16.8.91:8501", "", "*"]
+    }
+  },{
+    path: "http://172.16.8.91:9559/#/llm/functioncall",
+    name: "functioncall",
+    meta: {
+      menuName: "工具调用示例",
+      icon: "icon-user-group",
+      requiresAuth: true,
+      ignoreCache: true,
+      order: 8,
+      roles: ["http://172.16.8.91:7770/tool", "", "*"]
+    }
+  },{
+    path: "http://172.16.8.91:9559/#/llm/codegen",
+    name: "codegen",
+    meta: {
+      menuName: "代码生成示例",
+      icon: "icon-user-group",
+      requiresAuth: true,
+      ignoreCache: true,
+      order: 12,
+      roles: ["http://172.16.8.91:7770/code", "", "*"]
+    }
+  },{
+    path: "http://172.16.8.91:9559/#/llm/fchat",
+    name: "fchat",
+    meta: {
+      menuName: "文件对话",
+      icon: "icon-user-group",
+      requiresAuth: true,
+      ignoreCache: true,
+      order: 16,
+      roles: ["http://172.16.8.91:8501/?request=GET%3A%2Ffchat", "", "*"]
+    }
+  },{
+    path: "http://172.16.8.91:9559/#/llm/ybychat",
+    name: "ybychat",
+    meta: {
+      menuName: "园博园助理",
+      icon: "icon-user-group",
+      requiresAuth: true,
+      ignoreCache: true,
+      order: 24,
+      roles: ["http://172.16.8.91:8501/?request=GET%3A%2Fyby", "", "*"]
+    }
+  },{
+    path: "http://172.16.8.91:9559/#/llm/ybychat2",
+    name: "ybychat2",
+    meta: {
+      menuName: "园博园助理2",
+      icon: "icon-user-group",
+      requiresAuth: true,
+      ignoreCache: true,
+      order: 25,
+      roles: ["http://172.16.8.91:8501/?request=GET%3A%2Fybyqa", "", "*"]
+    }
+  },{
+    path: "http://172.16.8.91:9559/#/llm/battle",
+    name: "battle",
+    meta: {
+      menuName: "模型对比",
+      icon: "icon-user-group",
+      requiresAuth: true,
+      ignoreCache: true,
+      order: 28,
+      roles: ["http://172.16.8.91:7785", "", "*"]
+    }
+  },{
+    path: "http://172.16.8.91:9559/#/llm/defaultchat",
+    name: "defaultchat",
+    meta: {
+      menuName: "前台Chat",
+      icon: "icon-user-group",
+      requiresAuth: true,
+      ignoreCache: true,
+      order: 32,
+      roles: ["http://172.16.8.91:7775", "", "*"]
+    }
+  },{
+    path: "http://172.16.8.91:8501/",
+    name: "kbmanage",
+    meta: {
+      menuName: "知识库管理",
+      icon: "icon-user-group",
+      requiresAuth: true,
+      ignoreCache: true,
+      order: 36,
+      roles: ["http://172.16.8.91:7760", "", "*"]
+    }
+  },{
+    path: "http://172.16.8.91:9559/#/llm/apidocs",
+    name: "apidocs",
+    meta: {
+      menuName: "API在线文档",
+      icon: "icon-user-group",
+      requiresAuth: true,
+      ignoreCache: true,
+      order: 40,
+      roles: ["http://172.16.8.91:7861", "", "*"]
+    }
+  },{
+    path: "http://172.16.8.91:9559/#/llm/jsontools",
+    name: "jsontools",
+    meta: {
+      menuName: "JSON查看工具",
+      icon: "icon-user-group",
+      requiresAuth: true,
+      ignoreCache: true,
+      order: 44,
+      roles: ["http://zollty.com/tools/json.html", "", "*"]
+    }
+  },{
+    path: "http://172.16.8.91:9559/#/llm/llmtrain",
+    name: "llmtrain",
+    meta: {
+      menuName: "LLM-训练",
+      icon: "icon-user-group",
+      requiresAuth: true,
+      ignoreCache: true,
+      order: 48,
+      roles: ["http://172.16.8.91:7760", "", "*"]
+    }
+  },{
+    path: "http://172.16.8.91:9559/#/llm/chatglm3",
+    name: "chatglm3",
+    meta: {
+      menuName: "原始ChatGLM3",
+      icon: "icon-user-group",
+      requiresAuth: true,
+      ignoreCache: true,
+      order: 52,
+      roles: ["http://172.16.8.91:7770/chat", "", "*"]
+    }
+  }
+]
+
+export default FORM

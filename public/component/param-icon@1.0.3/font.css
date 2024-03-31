@@ -1,0 +1,1719 @@
+@font-face {
+    font-family: my-icon;
+    src: url("my-icon.eot");src: url("my-icon.eot?1c954cd2#iefix") format("embedded-opentype"),
+             url("my-icon.woff2?1c954cd2") format("woff2"),
+             url("my-icon.woff?1c954cd2") format("woff"),
+             url("my-icon.ttf?1c954cd2") format("truetype"),
+             url("my-icon.svg?1c954cd2#my-icon") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="param-icon"], [class*=" param-icon"] {
+    font-family: 'my-icon' !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-style: normal;
+}
+
+
+.param-icon-bns_2D-turn::before {
+    content: "\554a";
+}
+
+.param-icon-bns_360photo::before {
+    content: "\554b";
+}
+
+.param-icon-bns_3D-turn::before {
+    content: "\554c";
+}
+
+.param-icon-bns_3d-section-cube::before {
+    content: "\554d";
+}
+
+.param-icon-bns_3d-section-cube2::before {
+    content: "\554e";
+}
+
+.param-icon-bns_Amusement-facilities::before {
+    content: "\554f";
+}
+
+.param-icon-bns_Attendance::before {
+    content: "\5550";
+}
+
+.param-icon-bns_Bamboo::before {
+    content: "\5551";
+}
+
+.param-icon-bns_Checkbox-false::before {
+    content: "\5552";
+}
+
+.param-icon-bns_Checkbox-part::before {
+    content: "\5553";
+}
+
+.param-icon-bns_Checkbox-true::before {
+    content: "\5554";
+}
+
+.param-icon-bns_Cleaner-people::before {
+    content: "\5555";
+}
+
+.param-icon-bns_Cleaning-dustbin::before {
+    content: "\5556";
+}
+
+.param-icon-bns_Climbing-plant-one::before {
+    content: "\5557";
+}
+
+.param-icon-bns_Climbing-plant-two::before {
+    content: "\5558";
+}
+
+.param-icon-bns_Data-intelligence-middle-platform::before {
+    content: "\5559";
+}
+
+.param-icon-bns_Data-management-platform::before {
+    content: "\555a";
+}
+
+.param-icon-bns_Green-space-tree-Protection::before {
+    content: "\555b";
+}
+
+.param-icon-bns_Hedgerow::before {
+    content: "\555c";
+}
+
+.param-icon-bns_Hydrophyte::before {
+    content: "\555d";
+}
+
+.param-icon-bns_Indicator-management::before {
+    content: "\555e";
+}
+
+.param-icon-bns_Inflammable::before {
+    content: "\555f";
+}
+
+.param-icon-bns_Infrared::before {
+    content: "\5560";
+}
+
+.param-icon-bns_Insect-Pest::before {
+    content: "\5561";
+}
+
+.param-icon-bns_Inspection-maintenance::before {
+    content: "\5562";
+}
+
+.param-icon-bns_Interface-port-line::before {
+    content: "\5563";
+}
+
+.param-icon-bns_Land-use-management::before {
+    content: "\5564";
+}
+
+.param-icon-bns_Land-use-management2::before {
+    content: "\5565";
+}
+
+.param-icon-bns_Maintenance-section::before {
+    content: "\5566";
+}
+
+.param-icon-bns_Mechanics::before {
+    content: "\5567";
+}
+
+.param-icon-bns_No-attendance::before {
+    content: "\5568";
+}
+
+.param-icon-bns_Occupy-destroy-green::before {
+    content: "\5569";
+}
+
+.param-icon-bns_Patrol::before {
+    content: "\556a";
+}
+
+.param-icon-bns_Platform-management-system::before {
+    content: "\556b";
+}
+
+.param-icon-bns_Positioning::before {
+    content: "\556c";
+}
+
+.param-icon-bns_Proportion::before {
+    content: "\556d";
+}
+
+.param-icon-bns_QR-code::before {
+    content: "\556e";
+}
+
+.param-icon-bns_Refresh::before {
+    content: "\556f";
+}
+
+.param-icon-bns_Route::before {
+    content: "\5570";
+}
+
+.param-icon-bns_Sandstorm-Weather::before {
+    content: "\5571";
+}
+
+.param-icon-bns_Scenicspots::before {
+    content: "\5572";
+}
+
+.param-icon-bns_Sculpture::before {
+    content: "\5573";
+}
+
+.param-icon-bns_Sculpture2::before {
+    content: "\5574";
+}
+
+.param-icon-bns_Seeding::before {
+    content: "\5575";
+}
+
+.param-icon-bns_Sifting::before {
+    content: "\5576";
+}
+
+.param-icon-bns_Sifting_solid::before {
+    content: "\5577";
+}
+
+.param-icon-bns_Snow-Weather::before {
+    content: "\5578";
+}
+
+.param-icon-bns_Statistical-analysis::before {
+    content: "\5579";
+}
+
+.param-icon-bns_Statistical-analysis2::before {
+    content: "\557a";
+}
+
+.param-icon-bns_Sunny-Weather::before {
+    content: "\557b";
+}
+
+.param-icon-bns_Sunny-morning::before {
+    content: "\557c";
+}
+
+.param-icon-bns_Switching::before {
+    content: "\557d";
+}
+
+.param-icon-bns_Tree-trunk::before {
+    content: "\557e";
+}
+
+.param-icon-bns_Urban-land-type::before {
+    content: "\557f";
+}
+
+.param-icon-bns_Workmen::before {
+    content: "\5580";
+}
+
+.param-icon-bns__arc-de-triomphe::before {
+    content: "\5581";
+}
+
+.param-icon-bns__chinese-pavilion::before {
+    content: "\5582";
+}
+
+.param-icon-bns__pagoda::before {
+    content: "\5583";
+}
+
+.param-icon-bns_access-control-door::before {
+    content: "\5584";
+}
+
+.param-icon-bns_all-menu::before {
+    content: "\5585";
+}
+
+.param-icon-bns_ambulance-save::before {
+    content: "\5586";
+}
+
+.param-icon-bns_analysis-data-indicators::before {
+    content: "\5587";
+}
+
+.param-icon-bns_analysis::before {
+    content: "\5588";
+}
+
+.param-icon-bns_anglemeasurement-roundhead::before {
+    content: "\5589";
+}
+
+.param-icon-bns_animal-bird::before {
+    content: "\558a";
+}
+
+.param-icon-bns_animal-deer::before {
+    content: "\558b";
+}
+
+.param-icon-bns_animal-hurt::before {
+    content: "\558c";
+}
+
+.param-icon-bns_announcement-broadcast-trumpets::before {
+    content: "\558d";
+}
+
+.param-icon-bns_app-project-content::before {
+    content: "\558e";
+}
+
+.param-icon-bns_appendices-links::before {
+    content: "\558f";
+}
+
+.param-icon-bns_archives::before {
+    content: "\5590";
+}
+
+.param-icon-bns_archives2::before {
+    content: "\5591";
+}
+
+.param-icon-bns_area::before {
+    content: "\5592";
+}
+
+.param-icon-bns_area_range::before {
+    content: "\5593";
+}
+
+.param-icon-bns_arrowhead-VR::before {
+    content: "\5594";
+}
+
+.param-icon-bns_aspeed::before {
+    content: "\5595";
+}
+
+.param-icon-bns_back-left-arrow-line::before {
+    content: "\5596";
+}
+
+.param-icon-bns_back::before {
+    content: "\5597";
+}
+
+.param-icon-bns_backstage-computer-product::before {
+    content: "\5598";
+}
+
+.param-icon-bns_backstage::before {
+    content: "\5599";
+}
+
+.param-icon-bns_balance::before {
+    content: "\559a";
+}
+
+.param-icon-bns_bianpo::before {
+    content: "\559b";
+}
+
+.param-icon-bns_border-tree::before {
+    content: "\559c";
+}
+
+.param-icon-bns_boundaries::before {
+    content: "\559d";
+}
+
+.param-icon-bns_bridge::before {
+    content: "\559e";
+}
+
+.param-icon-bns_build::before {
+    content: "\559f";
+}
+
+.param-icon-bns_building-three::before {
+    content: "\55a0";
+}
+
+.param-icon-bns_building::before {
+    content: "\55a1";
+}
+
+.param-icon-bns_bus::before {
+    content: "\55a2";
+}
+
+.param-icon-bns_cactus::before {
+    content: "\55a3";
+}
+
+.param-icon-bns_calculation::before {
+    content: "\55a4";
+}
+
+.param-icon-bns_camera-Screenshot::before {
+    content: "\55a5";
+}
+
+.param-icon-bns_camp::before {
+    content: "\55a6";
+}
+
+.param-icon-bns_car-search::before {
+    content: "\55a7";
+}
+
+.param-icon-bns_car::before {
+    content: "\55a8";
+}
+
+.param-icon-bns_christmas-tree-one::before {
+    content: "\55a9";
+}
+
+.param-icon-bns_city-building-skyline::before {
+    content: "\55aa";
+}
+
+.param-icon-bns_city-building::before {
+    content: "\55ab";
+}
+
+.param-icon-bns_city-building2::before {
+    content: "\55ac";
+}
+
+.param-icon-bns_city-gate::before {
+    content: "\55ad";
+}
+
+.param-icon-bns_close-line-roundhead::before {
+    content: "\55ae";
+}
+
+.param-icon-bns_close-shutdown-off-exit::before {
+    content: "\55af";
+}
+
+.param-icon-bns_clouds-Weather::before {
+    content: "\55b0";
+}
+
+.param-icon-bns_cnr::before {
+    content: "\55b1";
+}
+
+.param-icon-bns_coincidence::before {
+    content: "\55b2";
+}
+
+.param-icon-bns_collapse-45::before {
+    content: "\55b3";
+}
+
+.param-icon-bns_collapse-line::before {
+    content: "\55b4";
+}
+
+.param-icon-bns_collect-line-polygon5::before {
+    content: "\55b5";
+}
+
+.param-icon-bns_collect-polygon5::before {
+    content: "\55b6";
+}
+
+.param-icon-bns_colorful::before {
+    content: "\55b7";
+}
+
+.param-icon-bns_combination-project::before {
+    content: "\55b8";
+}
+
+.param-icon-bns_compare-fill::before {
+    content: "\55b9";
+}
+
+.param-icon-bns_component::before {
+    content: "\55ba";
+}
+
+.param-icon-bns_constituency::before {
+    content: "\55bb";
+}
+
+.param-icon-bns_control::before {
+    content: "\55bc";
+}
+
+.param-icon-bns_cost-statistics::before {
+    content: "\55bd";
+}
+
+.param-icon-bns_cube-line-three::before {
+    content: "\55be";
+}
+
+.param-icon-bns_cube-line::before {
+    content: "\55bf";
+}
+
+.param-icon-bns_culturalactivity::before {
+    content: "\55c0";
+}
+
+.param-icon-bns_curing::before {
+    content: "\55c1";
+}
+
+.param-icon-bns_current::before {
+    content: "\55c2";
+}
+
+.param-icon-bns_curve-roundhead::before {
+    content: "\55c3";
+}
+
+.param-icon-bns_cutting-polygon6::before {
+    content: "\55c4";
+}
+
+.param-icon-bns_dam::before {
+    content: "\55c5";
+}
+
+.param-icon-bns_damage::before {
+    content: "\55c6";
+}
+
+.param-icon-bns_date::before {
+    content: "\55c7";
+}
+
+.param-icon-bns_decorate::before {
+    content: "\55c8";
+}
+
+.param-icon-bns_deflection::before {
+    content: "\55c9";
+}
+
+.param-icon-bns_destroy::before {
+    content: "\55ca";
+}
+
+.param-icon-bns_disease::before {
+    content: "\55cb";
+}
+
+.param-icon-bns_displaymix::before {
+    content: "\55cc";
+}
+
+.param-icon-bns_displaymix2::before {
+    content: "\55cd";
+}
+
+.param-icon-bns_divisive-cube-line::before {
+    content: "\55ce";
+}
+
+.param-icon-bns_doctor::before {
+    content: "\55cf";
+}
+
+.param-icon-bns_documents::before {
+    content: "\55d0";
+}
+
+.param-icon-bns_doublescreen-fill::before {
+    content: "\55d1";
+}
+
+.param-icon-bns_down-arrow-line::before {
+    content: "\55d2";
+}
+
+.param-icon-bns_download1fill::before {
+    content: "\55d3";
+}
+
+.param-icon-bns_drop-down1::before {
+    content: "\55d4";
+}
+
+.param-icon-bns_earth-world::before {
+    content: "\55d5";
+}
+
+.param-icon-bns_electricity::before {
+    content: "\55d6";
+}
+
+.param-icon-bns_elevation::before {
+    content: "\55d7";
+}
+
+.param-icon-bns_ellipse-line::before {
+    content: "\55d8";
+}
+
+.param-icon-bns_englishletter-roundhead::before {
+    content: "\55d9";
+}
+
+.param-icon-bns_enlarge-blowup::before {
+    content: "\55da";
+}
+
+.param-icon-bns_equipment::before {
+    content: "\55db";
+}
+
+.param-icon-bns_equipment2::before {
+    content: "\55dc";
+}
+
+.param-icon-bns_equipment3::before {
+    content: "\55dd";
+}
+
+.param-icon-bns_equipment4::before {
+    content: "\55de";
+}
+
+.param-icon-bns_equipment5::before {
+    content: "\55df";
+}
+
+.param-icon-bns_evaluate::before {
+    content: "\55e0";
+}
+
+.param-icon-bns_examination::before {
+    content: "\55e1";
+}
+
+.param-icon-bns_exit-leave::before {
+    content: "\55e2";
+}
+
+.param-icon-bns_expand-45::before {
+    content: "\55e3";
+}
+
+.param-icon-bns_expand-line::before {
+    content: "\55e4";
+}
+
+.param-icon-bns_export::before {
+    content: "\55e5";
+}
+
+.param-icon-bns_export2::before {
+    content: "\55e6";
+}
+
+.param-icon-bns_fallinwater::before {
+    content: "\55e7";
+}
+
+.param-icon-bns_farmland::before {
+    content: "\55e8";
+}
+
+.param-icon-bns_fence-one::before {
+    content: "\55e9";
+}
+
+.param-icon-bns_fence::before {
+    content: "\55ea";
+}
+
+.param-icon-bns_file-information::before {
+    content: "\55eb";
+}
+
+.param-icon-bns_file::before {
+    content: "\55ec";
+}
+
+.param-icon-bns_findfile-searchfile::before {
+    content: "\55ed";
+}
+
+.param-icon-bns_fire-extinguisher::before {
+    content: "\55ee";
+}
+
+.param-icon-bns_fire-hydrant::before {
+    content: "\55ef";
+}
+
+.param-icon-bns_flag::before {
+    content: "\55f0";
+}
+
+.param-icon-bns_flatten-download-line::before {
+    content: "\55f1";
+}
+
+.param-icon-bns_floor::before {
+    content: "\55f2";
+}
+
+.param-icon-bns_flowerpot::before {
+    content: "\55f3";
+}
+
+.param-icon-bns_folder-fill::before {
+    content: "\55f4";
+}
+
+.param-icon-bns_folder-fill2::before {
+    content: "\55f5";
+}
+
+.param-icon-bns_food::before {
+    content: "\55f6";
+}
+
+.param-icon-bns_fountain::before {
+    content: "\55f7";
+}
+
+.param-icon-bns_future-build-three::before {
+    content: "\55f8";
+}
+
+.param-icon-bns_gardenexpo::before {
+    content: "\55f9";
+}
+
+.param-icon-bns_gardening::before {
+    content: "\55fa";
+}
+
+.param-icon-bns_gate::before {
+    content: "\55fb";
+}
+
+.param-icon-bns_gnss::before {
+    content: "\55fc";
+}
+
+.param-icon-bns_gotarget1::before {
+    content: "\55fd";
+}
+
+.param-icon-bns_graphic-file-data::before {
+    content: "\55fe";
+}
+
+.param-icon-bns_graphical1::before {
+    content: "\55ff";
+}
+
+.param-icon-bns_graphicfile-folder::before {
+    content: "\5600";
+}
+
+.param-icon-bns_grass-two::before {
+    content: "\5601";
+}
+
+.param-icon-bns_grass::before {
+    content: "\5602";
+}
+
+.param-icon-bns_grassbroken::before {
+    content: "\5603";
+}
+
+.param-icon-bns_grasstrash::before {
+    content: "\5604";
+}
+
+.param-icon-bns_greentrash::before {
+    content: "\5605";
+}
+
+.param-icon-bns_happyface::before {
+    content: "\5606";
+}
+
+.param-icon-bns_height-arrow-line::before {
+    content: "\5607";
+}
+
+.param-icon-bns_home-mainpage::before {
+    content: "\5608";
+}
+
+.param-icon-bns_humidity::before {
+    content: "\5609";
+}
+
+.param-icon-bns_hygiene-clean::before {
+    content: "\560a";
+}
+
+.param-icon-bns_identification::before {
+    content: "\560b";
+}
+
+.param-icon-bns_info-heavy1::before {
+    content: "\560c";
+}
+
+.param-icon-bns_into::before {
+    content: "\560d";
+}
+
+.param-icon-bns_jump::before {
+    content: "\560e";
+}
+
+.param-icon-bns_land::before {
+    content: "\560f";
+}
+
+.param-icon-bns_lawn-two::before {
+    content: "\5610";
+}
+
+.param-icon-bns_lawn::before {
+    content: "\5611";
+}
+
+.param-icon-bns_leaf-fill::before {
+    content: "\5612";
+}
+
+.param-icon-bns_leaf-fill2::before {
+    content: "\5613";
+}
+
+.param-icon-bns_leaf::before {
+    content: "\5614";
+}
+
+.param-icon-bns_length-roundhead::before {
+    content: "\5615";
+}
+
+.param-icon-bns_link-relationship::before {
+    content: "\5616";
+}
+
+.param-icon-bns_link::before {
+    content: "\5617";
+}
+
+.param-icon-bns_loading-line-roundhead::before {
+    content: "\5618";
+}
+
+.param-icon-bns_lock::before {
+    content: "\5619";
+}
+
+.param-icon-bns_logs::before {
+    content: "\561a";
+}
+
+.param-icon-bns_long-arrow45::before {
+    content: "\561b";
+}
+
+.param-icon-bns_magic-line-effect::before {
+    content: "\561c";
+}
+
+.param-icon-bns_management-asset::before {
+    content: "\561d";
+}
+
+.param-icon-bns_management::before {
+    content: "\561e";
+}
+
+.param-icon-bns_map-cn-point::before {
+    content: "\561f";
+}
+
+.param-icon-bns_map-road-two::before {
+    content: "\5620";
+}
+
+.param-icon-bns_mapping-sketch-draw::before {
+    content: "\5621";
+}
+
+.param-icon-bns_meachine::before {
+    content: "\5622";
+}
+
+.param-icon-bns_meachine2::before {
+    content: "\5623";
+}
+
+.param-icon-bns_measure-ruler-line::before {
+    content: "\5624";
+}
+
+.param-icon-bns_mechanism::before {
+    content: "\5625";
+}
+
+.param-icon-bns_menu-list::before {
+    content: "\5626";
+}
+
+.param-icon-bns_menu-tree::before {
+    content: "\5627";
+}
+
+.param-icon-bns_money::before {
+    content: "\5628";
+}
+
+.param-icon-bns_money2::before {
+    content: "\5629";
+}
+
+.param-icon-bns_monitor-space-key-point::before {
+    content: "\562a";
+}
+
+.param-icon-bns_mountain-base::before {
+    content: "\562b";
+}
+
+.param-icon-bns_mover::before {
+    content: "\562c";
+}
+
+.param-icon-bns_mover2::before {
+    content: "\562d";
+}
+
+.param-icon-bns_mute::before {
+    content: "\562e";
+}
+
+.param-icon-bns_night1::before {
+    content: "\562f";
+}
+
+.param-icon-bns_noshow-eye-nodisplay::before {
+    content: "\5630";
+}
+
+.param-icon-bns_off-line::before {
+    content: "\5631";
+}
+
+.param-icon-bns_oldtree::before {
+    content: "\5632";
+}
+
+.param-icon-bns_online::before {
+    content: "\5633";
+}
+
+.param-icon-bns_operations::before {
+    content: "\5634";
+}
+
+.param-icon-bns_overcast-Weather::before {
+    content: "\5635";
+}
+
+.param-icon-bns_overview::before {
+    content: "\5636";
+}
+
+.param-icon-bns_panorama::before {
+    content: "\5637";
+}
+
+.param-icon-bns_paperplanet::before {
+    content: "\5638";
+}
+
+.param-icon-bns_park::before {
+    content: "\5639";
+}
+
+.param-icon-bns_park2::before {
+    content: "\563a";
+}
+
+.param-icon-bns_park3::before {
+    content: "\563b";
+}
+
+.param-icon-bns_park4::before {
+    content: "\563c";
+}
+
+.param-icon-bns_park5::before {
+    content: "\563d";
+}
+
+.param-icon-bns_park6::before {
+    content: "\563e";
+}
+
+.param-icon-bns_parking::before {
+    content: "\563f";
+}
+
+.param-icon-bns_parking2::before {
+    content: "\5640";
+}
+
+.param-icon-bns_parkseats::before {
+    content: "\5641";
+}
+
+.param-icon-bns_parterre::before {
+    content: "\5642";
+}
+
+.param-icon-bns_passageway::before {
+    content: "\5643";
+}
+
+.param-icon-bns_passageway2::before {
+    content: "\5644";
+}
+
+.param-icon-bns_patrol-inspect::before {
+    content: "\5645";
+}
+
+.param-icon-bns_pavilion::before {
+    content: "\5646";
+}
+
+.param-icon-bns_people-service::before {
+    content: "\5647";
+}
+
+.param-icon-bns_people::before {
+    content: "\5648";
+}
+
+.param-icon-bns_ph::before {
+    content: "\5649";
+}
+
+.param-icon-bns_ph10::before {
+    content: "\564a";
+}
+
+.param-icon-bns_ph205::before {
+    content: "\564b";
+}
+
+.param-icon-bns_pick-sound::before {
+    content: "\564c";
+}
+
+.param-icon-bns_plan::before {
+    content: "\564d";
+}
+
+.param-icon-bns_plan2::before {
+    content: "\564e";
+}
+
+.param-icon-bns_plants-tree-forest::before {
+    content: "\564f";
+}
+
+.param-icon-bns_play-Circle::before {
+    content: "\5650";
+}
+
+.param-icon-bns_play::before {
+    content: "\5651";
+}
+
+.param-icon-bns_point-circular-four::before {
+    content: "\5652";
+}
+
+.param-icon-bns_point-circular::before {
+    content: "\5653";
+}
+
+.param-icon-bns_police::before {
+    content: "\5654";
+}
+
+.param-icon-bns_polyline::before {
+    content: "\5655";
+}
+
+.param-icon-bns_potting::before {
+    content: "\5656";
+}
+
+.param-icon-bns_preplan::before {
+    content: "\5657";
+}
+
+.param-icon-bns_protect-security::before {
+    content: "\5658";
+}
+
+.param-icon-bns_protect-security2::before {
+    content: "\5659";
+}
+
+.param-icon-bns_rain-Weather::before {
+    content: "\565a";
+}
+
+.param-icon-bns_ray-Weather::before {
+    content: "\565b";
+}
+
+.param-icon-bns_regular::before {
+    content: "\565c";
+}
+
+.param-icon-bns_reset-refresh::before {
+    content: "\565d";
+}
+
+.param-icon-bns_resources-box::before {
+    content: "\565e";
+}
+
+.param-icon-bns_resting::before {
+    content: "\565f";
+}
+
+.param-icon-bns_right-arrow-line::before {
+    content: "\5660";
+}
+
+.param-icon-bns_road::before {
+    content: "\5661";
+}
+
+.param-icon-bns_road2::before {
+    content: "\5662";
+}
+
+.param-icon-bns_roadlight::before {
+    content: "\5663";
+}
+
+.param-icon-bns_roadline45::before {
+    content: "\5664";
+}
+
+.param-icon-bns_role::before {
+    content: "\5665";
+}
+
+.param-icon-bns_rooftopgreen::before {
+    content: "\5666";
+}
+
+.param-icon-bns_sandbeach::before {
+    content: "\5667";
+}
+
+.param-icon-bns_scan-line-radar::before {
+    content: "\5668";
+}
+
+.param-icon-bns_scan-radar::before {
+    content: "\5669";
+}
+
+.param-icon-bns_screen-funnel::before {
+    content: "\566a";
+}
+
+.param-icon-bns_screenshot-cutting-line::before {
+    content: "\566b";
+}
+
+.param-icon-bns_searchfile-list::before {
+    content: "\566c";
+}
+
+.param-icon-bns_sector-line-measure::before {
+    content: "\566d";
+}
+
+.param-icon-bns_selected-fill-roundhead::before {
+    content: "\566e";
+}
+
+.param-icon-bns_sensor::before {
+    content: "\566f";
+}
+
+.param-icon-bns_setup-documents::before {
+    content: "\5670";
+}
+
+.param-icon-bns_setup-gear-line::before {
+    content: "\5671";
+}
+
+.param-icon-bns_show-eye-display::before {
+    content: "\5672";
+}
+
+.param-icon-bns_shrub::before {
+    content: "\5673";
+}
+
+.param-icon-bns_signage-coordinate-line::before {
+    content: "\5674";
+}
+
+.param-icon-bns_smallmap-eagleye::before {
+    content: "\5675";
+}
+
+.param-icon-bns_smoke-sensation::before {
+    content: "\5676";
+}
+
+.param-icon-bns_structure::before {
+    content: "\5677";
+}
+
+.param-icon-bns_sun-sunny-line-light::before {
+    content: "\5678";
+}
+
+.param-icon-bns_surface-level-rectangle::before {
+    content: "\5679";
+}
+
+.param-icon-bns_surveillance-management::before {
+    content: "\567a";
+}
+
+.param-icon-bns_surveillance::before {
+    content: "\567b";
+}
+
+.param-icon-bns_surveillance2::before {
+    content: "\567c";
+}
+
+.param-icon-bns_surveillance3::before {
+    content: "\567d";
+}
+
+.param-icon-bns_systemsetup-gear::before {
+    content: "\567e";
+}
+
+.param-icon-bns_task::before {
+    content: "\567f";
+}
+
+.param-icon-bns_temperature::before {
+    content: "\5680";
+}
+
+.param-icon-bns_three-people::before {
+    content: "\5681";
+}
+
+.param-icon-bns_time::before {
+    content: "\5682";
+}
+
+.param-icon-bns_toilet::before {
+    content: "\5683";
+}
+
+.param-icon-bns_tool-wrench::before {
+    content: "\5684";
+}
+
+.param-icon-bns_transfer::before {
+    content: "\5685";
+}
+
+.param-icon-bns_transport::before {
+    content: "\5686";
+}
+
+.param-icon-bns_tree-Strong::before {
+    content: "\5687";
+}
+
+.param-icon-bns_tree-fourfill::before {
+    content: "\5688";
+}
+
+.param-icon-bns_tree-one::before {
+    content: "\5689";
+}
+
+.param-icon-bns_tree-threefill::before {
+    content: "\568a";
+}
+
+.param-icon-bns_tree-twofill::before {
+    content: "\568b";
+}
+
+.param-icon-bns_treefill::before {
+    content: "\568c";
+}
+
+.param-icon-bns_treefire::before {
+    content: "\568d";
+}
+
+.param-icon-bns_treeline::before {
+    content: "\568e";
+}
+
+.param-icon-bns_treeprotect::before {
+    content: "\568f";
+}
+
+.param-icon-bns_truck::before {
+    content: "\5690";
+}
+
+.param-icon-bns_turrets::before {
+    content: "\5691";
+}
+
+.param-icon-bns_umbrella::before {
+    content: "\5692";
+}
+
+.param-icon-bns_umbrella2::before {
+    content: "\5693";
+}
+
+.param-icon-bns_unfold-line-circle::before {
+    content: "\5694";
+}
+
+.param-icon-bns_unlook::before {
+    content: "\5695";
+}
+
+.param-icon-bns_up-arrow-line::before {
+    content: "\5696";
+}
+
+.param-icon-bns_upload-upward::before {
+    content: "\5697";
+}
+
+.param-icon-bns_video-no::before {
+    content: "\5698";
+}
+
+.param-icon-bns_voltage::before {
+    content: "\5699";
+}
+
+.param-icon-bns_volume::before {
+    content: "\569a";
+}
+
+.param-icon-bns_vr::before {
+    content: "\569b";
+}
+
+.param-icon-bns_wall-line::before {
+    content: "\569c";
+}
+
+.param-icon-bns_warning::before {
+    content: "\569d";
+}
+
+.param-icon-bns_warning2::before {
+    content: "\569e";
+}
+
+.param-icon-bns_water-leakage::before {
+    content: "\569f";
+}
+
+.param-icon-bns_water::before {
+    content: "\56a0";
+}
+
+.param-icon-bns_waterlevel-line::before {
+    content: "\56a1";
+}
+
+.param-icon-bns_waterpipe::before {
+    content: "\56a2";
+}
+
+.param-icon-bns_watertemperature::before {
+    content: "\56a3";
+}
+
+.param-icon-bns_weight::before {
+    content: "\56a4";
+}
+
+.param-icon-bns_winddirection::before {
+    content: "\56a5";
+}
+
+.param-icon-bns_windspeed::before {
+    content: "\56a6";
+}
+
+.param-icon-bns_withered-flower::before {
+    content: "\56a7";
+}
+
+.param-icon-bns_words::before {
+    content: "\56a8";
+}
+
+.param-icon-bns_work::before {
+    content: "\56a9";
+}
+
+.param-icon-bns_worker-green::before {
+    content: "\56aa";
+}
+
+.param-icon-bns_wrong-fail-roundhead-fill::before {
+    content: "\56ab";
+}
+
+.param-icon-sys_Check::before {
+    content: "\56ac";
+}
+
+.param-icon-sys_CheckCircle::before {
+    content: "\56ad";
+}
+
+.param-icon-sys_CheckSquare::before {
+    content: "\56ae";
+}
+
+.param-icon-sys_Circle::before {
+    content: "\56af";
+}
+
+.param-icon-sys_ClockCircle-line::before {
+    content: "\56b0";
+}
+
+.param-icon-sys_Close::before {
+    content: "\56b1";
+}
+
+.param-icon-sys_CloseCircle::before {
+    content: "\56b2";
+}
+
+.param-icon-sys_CloseSquare::before {
+    content: "\56b3";
+}
+
+.param-icon-sys_Copy::before {
+    content: "\56b4";
+}
+
+.param-icon-sys_Dash::before {
+    content: "\56b5";
+}
+
+.param-icon-sys_DeleteOutlined::before {
+    content: "\56b6";
+}
+
+.param-icon-sys_Down::before {
+    content: "\56b7";
+}
+
+.param-icon-sys_Down2::before {
+    content: "\56b8";
+}
+
+.param-icon-sys_Edit::before {
+    content: "\56b9";
+}
+
+.param-icon-sys_Exclamation::before {
+    content: "\56ba";
+}
+
+.param-icon-sys_ExclamationCircle-line::before {
+    content: "\56bb";
+}
+
+.param-icon-sys_Form::before {
+    content: "\56bc";
+}
+
+.param-icon-sys_Info::before {
+    content: "\56bd";
+}
+
+.param-icon-sys_InfoCircle::before {
+    content: "\56be";
+}
+
+.param-icon-sys_IssuesClose::before {
+    content: "\56bf";
+}
+
+.param-icon-sys_Left::before {
+    content: "\56c0";
+}
+
+.param-icon-sys_Left2::before {
+    content: "\56c1";
+}
+
+.param-icon-sys_Minus::before {
+    content: "\56c2";
+}
+
+.param-icon-sys_MinusCircle::before {
+    content: "\56c3";
+}
+
+.param-icon-sys_MinusSquare::before {
+    content: "\56c4";
+}
+
+.param-icon-sys_PauseCircle::before {
+    content: "\56c5";
+}
+
+.param-icon-sys_Plus-line::before {
+    content: "\56c6";
+}
+
+.param-icon-sys_Plus-line2::before {
+    content: "\56c7";
+}
+
+.param-icon-sys_PlusCircle-line::before {
+    content: "\56c8";
+}
+
+.param-icon-sys_PlusSquare::before {
+    content: "\56c9";
+}
+
+.param-icon-sys_Polygons::before {
+    content: "\56ca";
+}
+
+.param-icon-sys_Question-line::before {
+    content: "\56cb";
+}
+
+.param-icon-sys_QuestionCircle::before {
+    content: "\56cc";
+}
+
+.param-icon-sys_Rectangles::before {
+    content: "\56cd";
+}
+
+.param-icon-sys_Right::before {
+    content: "\56ce";
+}
+
+.param-icon-sys_Right2::before {
+    content: "\56cf";
+}
+
+.param-icon-sys_Scissor::before {
+    content: "\56d0";
+}
+
+.param-icon-sys_Snippets::before {
+    content: "\56d1";
+}
+
+.param-icon-sys_Stop::before {
+    content: "\56d2";
+}
+
+.param-icon-sys_Up::before {
+    content: "\56d3";
+}
+
+.param-icon-sys_Up2::before {
+    content: "\56d4";
+}
+
+.param-icon-sys_Warning-polygon3::before {
+    content: "\56d5";
+}
+
+.param-icon-sys_ZoomIn::before {
+    content: "\56d6";
+}
+
+.param-icon-sys_ZoomOut::before {
+    content: "\56d7";
+}
+
+.param-icon-sys_check-circle-fill::before {
+    content: "\56d8";
+}
+
+.param-icon-sys_check-square-fill::before {
+    content: "\56d9";
+}
+
+.param-icon-sys_clock-circle-fill::before {
+    content: "\56da";
+}
+
+.param-icon-sys_close-circle-fill::before {
+    content: "\56db";
+}
+
+.param-icon-sys_close-square-fill::before {
+    content: "\56dc";
+}
+
+.param-icon-sys_copy-fill::before {
+    content: "\56dd";
+}
+
+.param-icon-sys_delete-fill::before {
+    content: "\56de";
+}
+
+.param-icon-sys_exclamation-circle-fill::before {
+    content: "\56df";
+}
+
+.param-icon-sys_info-circle-fill::before {
+    content: "\56e0";
+}
+
+.param-icon-sys_link1::before {
+    content: "\56e1";
+}
+
+.param-icon-sys_link2::before {
+    content: "\56e2";
+}
+
+.param-icon-sys_link3::before {
+    content: "\56e3";
+}
+
+.param-icon-sys_minus-circle-fill::before {
+    content: "\56e4";
+}
+
+.param-icon-sys_minus-square-fill::before {
+    content: "\56e5";
+}
+
+.param-icon-sys_open::before {
+    content: "\56e6";
+}
+
+.param-icon-sys_pause-circle-fill::before {
+    content: "\56e7";
+}
+
+.param-icon-sys_pause-line::before {
+    content: "\56e8";
+}
+
+.param-icon-sys_plus-circle-fill::before {
+    content: "\56e9";
+}
+
+.param-icon-sys_plus-square-fill::before {
+    content: "\56ea";
+}
+
+.param-icon-sys_question-circle-fill::before {
+    content: "\56eb";
+}
+
+.param-icon-sys_retract::before {
+    content: "\56ec";
+}
+
+.param-icon-sys_save-Store::before {
+    content: "\56ed";
+}
+
+.param-icon-sys_search-find::before {
+    content: "\56ee";
+}
+
+.param-icon-sys_search-find2::before {
+    content: "\56ef";
+}
+
+.param-icon-sys_snippets-fill::before {
+    content: "\56f0";
+}
+
+.param-icon-sys_stop-fill::before {
+    content: "\56f1";
+}
+
+.param-icon-sys_warning-fill::before {
+    content: "\56f2";
+}
+
