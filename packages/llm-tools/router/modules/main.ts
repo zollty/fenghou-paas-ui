@@ -54,6 +54,18 @@ const FORM: AppRouteRecordRaw[] = [
           roles: ["http://172.16.8.91:8501/?request=GET%3A%2Futest", "", "*"]
         }
       },{
+        path: "keyword",
+        name: "keyword",
+        component: () => import("@/views/iframe.vue"),
+        meta: {
+          menuName: "关键词提取",
+          icon: "param-icon-bns_access-control-door",
+          requiresAuth: true,
+          hideInMenu: false,
+          order: 10,
+          roles: ["http://172.16.8.91:8501/?request=GET%3A%2Fkeyword", "", "*"]
+        }
+      },{
         path: "battle",
         name: "battle",
         component: () => import("@/views/iframe.vue"),
@@ -66,11 +78,36 @@ const FORM: AppRouteRecordRaw[] = [
           roles: ["http://172.16.8.91:7785", "", "*"]
         }
       },{
+        path: "txt2audio",
+        name: "txt2audio",
+        component: () => import("@/views/iframe.vue"),
+        meta: {
+          menuName: "语音合成M",
+          icon: "param-icon-bns_arrowhead-VR",
+          requiresAuth: true,
+          hideInMenu: false,
+          order: 13,
+          roles: ["http://172.16.8.91:8501/?request=GET%3A%2Fmaudio", "", "*"]
+        }
+      },{
+        path: "txt2audioe",
+        name: "txt2audioe",
+        component: () => import("@/views/iframe.vue"),
+        meta: {
+          menuName: "语音合成E",
+          icon: "param-icon-bns_analysis",
+          requiresAuth: true,
+          hideInMenu: false,
+          order: 14,
+          roles: ["http://172.16.8.91:8501/?request=GET%3A%2Faudio", "", "*"]
+        }
+      },{
         path: "apidocs",
         name: "apidocs",
         component: () => import("@/views/iframe.vue"),
         meta: {
           menuName: "后台API文档",
+          theme: "light",
           icon: "param-icon-bns_Occupy-destroy-green",
           requiresAuth: true,
           hideInMenu: false,
@@ -83,6 +120,7 @@ const FORM: AppRouteRecordRaw[] = [
         component: () => import("@/views/iframe.vue"),
         meta: {
           menuName: "AgentAPI文档",
+          theme: "light",
           icon: "param-icon-bns_Urban-land-type",
           requiresAuth: true,
           hideInMenu: false,
@@ -95,6 +133,7 @@ const FORM: AppRouteRecordRaw[] = [
         component: () => import("@/views/iframe.vue"),
         meta: {
           menuName: "CtrllerAPI文档",
+          theme: "light",
           icon: "param-icon-bns_Sunny-morning",
           requiresAuth: true,
           hideInMenu: false,
@@ -107,6 +146,7 @@ const FORM: AppRouteRecordRaw[] = [
         component: () => import("@/views/iframe.vue"),
         meta: {
           menuName: "JSON查看工具",
+          theme: "light",
           icon: "param-icon-bns_Patrol",
           requiresAuth: true,
           hideInMenu: false,
