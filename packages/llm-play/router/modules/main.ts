@@ -40,8 +40,8 @@ const FORM: AppRouteRecordRaw[] = [
           roles: ["http://172.16.8.91:8501/?request=GET%3A%2Ffchat", "", "*"]
         }
       },{
-        path: "fchat3",
-        name: "fchat3",
+        path: "nfchat3",
+        name: "nfchat3",
         component: () => import("@/views/iframe.vue"),
         meta: {
           menuName: "知识库对话",
@@ -49,7 +49,7 @@ const FORM: AppRouteRecordRaw[] = [
           requiresAuth: true,
           hideInMenu: false,
           order: 12,
-          roles: ["http://172.16.8.91:8501/?request=GET%3A%2Fkb", "", "*"]
+          roles: ["http://172.16.8.91:9990/chat?auth=ImIwYjRiMmMwMGEyMjExZWZiY2VmMDI0MmFjMTUwMDA0Ig.ZjZGPg.w9-e6h-84RKglIazupVzEhPffbY", "", "*"]
         }
       },{
         path: "plugin",
@@ -98,6 +98,18 @@ const FORM: AppRouteRecordRaw[] = [
           hideInMenu: false,
           order: 24,
           roles: ["http://172.16.8.91:7775", "", "*"]
+        }
+      },{
+        path: "fchat3",
+        name: "fchat3",
+        component: () => import("@/views/iframe.vue"),
+        meta: {
+          menuName: "旧版知识库",
+          icon: "param-icon-bns_Urban-land-type",
+          requiresAuth: true,
+          hideInMenu: false,
+          order: 26,
+          roles: ["http://172.16.8.91:8501/?request=GET%3A%2Fkb", "", "*"]
         }
       }
     ]},

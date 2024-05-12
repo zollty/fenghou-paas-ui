@@ -28,6 +28,19 @@ const FORM: AppRouteRecordRaw[] = [
       //   }
       // },
       {
+        path: "nkbmanage",
+        name: "nkbmanage",
+        component: () => import("@/views/iframe.vue"),
+        meta: {
+          menuName: "知识库管理",
+          icon: "param-icon-bns_logs",
+          requiresAuth: true,
+          hideInMenu: false,
+          order: 4,
+          roles: ["http://172.16.8.91:9990/knowledge?auth=ImIwYjRiMmMwMGEyMjExZWZiY2VmMDI0MmFjMTUwMDA0Ig.ZjZGPg.w9-e6h-84RKglIazupVzEhPffbY", "", "*"]
+        }
+      },
+      {
         path: "modelmg",
         name: "modelmg",
         component: () => import("@/views/iframe.vue"),
@@ -92,7 +105,7 @@ const FORM: AppRouteRecordRaw[] = [
         name: "kbmanage",
         component: () => import("@/views/iframe.vue"),
         meta: {
-          menuName: "知识库管理",
+          menuName: "旧版知识库",
           icon: "param-icon-bns_logs",
           requiresAuth: true,
           hideInMenu: false,
