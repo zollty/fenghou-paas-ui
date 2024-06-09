@@ -41,6 +41,19 @@ const FORM: AppRouteRecordRaw[] = [
         }
       },
       {
+        path: "nfilemanage",
+        name: "nfilemanage",
+        component: () => import("@/views/iframe.vue"),
+        meta: {
+          menuName: "文件管理",
+          icon: "param-icon-bns_findfile-searchfile",
+          requiresAuth: true,
+          hideInMenu: false,
+          order: 6,
+          roles: ["http://172.16.8.91:9990/file?auth=ImIwYjRiMmMwMGEyMjExZWZiY2VmMDI0MmFjMTUwMDA0Ig.ZjZGPg.w9-e6h-84RKglIazupVzEhPffbY", "", "*"]
+        }
+      },
+      {
         path: "modelmg",
         name: "modelmg",
         component: () => import("@/views/iframe.vue"),
@@ -70,7 +83,7 @@ const FORM: AppRouteRecordRaw[] = [
         component: () => import("@/views/iframe.vue"),
         meta: {
           menuName: "嵌入模型管理",
-          icon: "param-icon-bns_arrowhead-VR",
+          icon: "param-icon-bns_file-information",
           requiresAuth: true,
           hideInMenu: false,
           order: 16,
@@ -118,7 +131,7 @@ const FORM: AppRouteRecordRaw[] = [
         component: () => import("../../views/kb-config.vue"),
         meta: {
           menuName: "知识库配置",
-          icon: "param-icon-bns_area_range",
+          icon: "param-icon-bns_pick-sound",
           requiresAuth: true,
           hideInMenu: false,
           order: 32,
